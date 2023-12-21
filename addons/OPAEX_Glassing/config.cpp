@@ -90,7 +90,7 @@ class CfgCloudlets
 		particleFSIndex = 0;
 		particleFSFrameCount = 1;
 		particleFSLoop = 0;
-		particleType = "Spaceobject"
+		particleType = "Spaceobject";
 		
 		color[] = {{1, 1, 1, 1}};
 		emissiveColor[] = {{1, 1, 1, 1}, {1, 1, 1, 1}};

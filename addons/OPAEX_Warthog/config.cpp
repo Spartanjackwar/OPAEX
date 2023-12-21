@@ -141,9 +141,9 @@ class cfgVehicles
 			{
 				class ViewGunner;
 				class ViewOptics;
-			}
-		}
-	}
+			};
+		};
+	};
 	
 	//INTERNALS
 	class OPAEX_M12G1S_LRV: OPTRE_M12G1_LRV

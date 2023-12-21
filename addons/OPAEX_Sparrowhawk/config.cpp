@@ -139,13 +139,13 @@ class cfgVehicles
 			"attach_Decal1", "attach_Decal2"
 		};
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa",
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa",
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		weapons[] = {
 			"OPTRE_GUA23B", 
@@ -196,13 +196,13 @@ class cfgVehicles
 			//"attach_CannonHeavy", //50mm
 		};
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa",
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa",
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		weapons[] = {
 			"OPTRE_M9109",
@@ -245,13 +245,13 @@ class cfgVehicles
 			"attach_CannonHeavy", //50mm
 		};
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa", 
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa", 
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		weapons[] = {
 			"OPTRE_GUA23B",
@@ -294,13 +294,13 @@ class cfgVehicles
 			//"attach_CannonHeavy", //50mm
 		};
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa", 
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa", 
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		weapons[] = {
 			"OPTRE_M9109",
@@ -349,13 +349,13 @@ class cfgVehicles
 		};
 		/*
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa",
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa",
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		*/
 		weapons[] = {
@@ -408,13 +408,13 @@ class cfgVehicles
 		};
 		/*
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa",
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa",
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa",
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa",
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		*/
 		weapons[] = {
@@ -459,13 +459,13 @@ class cfgVehicles
 		};
 		/*
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa", 
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa", 
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		*/
 		weapons[] = {
@@ -510,13 +510,13 @@ class cfgVehicles
 		};
 		/*
 		hiddenSelectionsTextures[] = {
-			"optre_vehicles\sparrowhawk\data\body_01_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_02_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_03_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_04_co.paa", 
-			"optre_vehicles\sparrowhawk\data\body_05_co.paa", 
-			"optre_vehicles\sparrowhawk\data\autocannon_co.paa", 
-			"optre_vehicles\sparrowhawk\data\feed_autocannon_co.paa"
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_01_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_02_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_03_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_04_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\body_05_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\autocannon_co.paa", 
+			"OPTRE_Vehicles_Air\Sparrowhawk\data\feed_autocannon_co.paa"
 		};
 		*/
 		weapons[] = {

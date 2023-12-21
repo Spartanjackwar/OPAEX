@@ -57,9 +57,9 @@ class cfgVehicles
 		dlc = "OPTRE";
 		displayName = "Hornet VTOL";
 		author = "Spartanjackwar";
-		model = "\OPTRE_vehicles\hornet\hornet.p3d";
-		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";
-		picture = "OPTRE_Vehicles\Falcon\Data\icon2.paa";
+		model = "\OPTRE_Vehicles_Air\Hornet\hornet.p3d";
+		icon = "OPTRE_Vehicles_Air\Hornet\HornetIcon.paa";
+		picture = "OPTRE_Vehicles_Air\Falcon\Data\icon2.paa";
 		defaultUserMFDvalues[] = {0.082, 0.408, 0.039, 1}; //F/A-181X
 		class MFD
 		{
@@ -2293,7 +2293,7 @@ class cfgVehicles
 				blinkingPattern[] = {0.1, 0.9};
 				blinkingStartsOn = 1;
 				blinkingPatternGuarantee = 1; //was 0
-				intensity = 75
+				intensity = 75;
 				name = "CollisionLight_White_1_pos";
 			};
 			class CollisionLight_R: CollisionLight_W
@@ -2341,48 +2341,48 @@ class cfgVehicles
 			};
 		};
 		hiddenSelections[] = {"camo1", "clan", "clan_text", "insignia"};
-		hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
-		/*
-		class textureSources//: textureSources
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_green_co.paa"};
+		
+		class textureSources
 		{
 			class colorgreen
 			{
 				displayName = "Green";
 				author = "Article 2 Studios";
-				textures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+				textures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_green_co.paa"};
 				factions[] = {"OPTRE_UNSC"};
 			};
 			class colortan
 			{
 				displayName = "Desert";
 				author = "Article 2 Studios";
-				textures[] = {"optre_vehicles\hornet\data\hornet_hull_desert_co.paa"};
+				textures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_desert_co.paa"};
 				factions[] = {"OPTRE_UNSC"};
 			};
 			class colorblack
 			{
 				displayName = "Black";
 				author = "Article 2 Studios";
-				textures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
+				textures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_black_co.paa"};
 				factions[] = {"OPTRE_UNSC"};
 			};
 			class colorwhite
 			{
 				displayName = "Snow";
 				author = "Article 2 Studios";
-				textures[] = {"optre_vehicles\hornet\data\hornet_hull_snow_co.paa"};
+				textures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_snow_co.paa"};
 				factions[] = {"OPTRE_UNSC"};
 			};
 			class colorinnie
 			{
 				displayName = "Innie";
 				author = "Article 2 Studios";
-				textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+				textures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_innie_co.paa"};
 				factions[] = {"OPTRE_Ins"};
 			};
 		};
 		textureList[] = {"colorgreen", 1, "colorblack", 1, "colortan", 1, "colorwhite", 1};
-		*/
+
 		class Exhausts
 		{
 			class Exhaust1
@@ -2831,7 +2831,7 @@ class cfgVehicles
 		cost = 2e+006;
 		
 		//Textures
-		//hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+		//hiddenSelectionsTextures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_green_co.paa"};
 		//textureList[] = {"colorgreen", 1, "colorblack", 1, "colortan", 1, "colorwhite", 1};
 		class Components: Components
 		{
@@ -2856,7 +2856,7 @@ class cfgVehicles
 		cost = 2e+006;
 		
 		//Textures
-		hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_innie_co.paa"};
 		textureList[] = {"colorinnie", 1};
 	};
 	//----------------------------------------------------------------------

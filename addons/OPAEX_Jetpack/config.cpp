@@ -43,7 +43,7 @@ class Extended_PreInit_EventHandlers {
 
 class CfgVehicles
 {
-	#include<modules.hpp>
+	//#include<modules.hpp>
 };
 
 

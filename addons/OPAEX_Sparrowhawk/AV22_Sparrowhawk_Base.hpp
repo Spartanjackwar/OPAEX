@@ -94,7 +94,7 @@ class TransportItems
 //==============================================================================================
 destrType = "DestructWreck";
 gearRetracting = 1;
-model = "OPTRE_Vehicles\Sparrowhawk\Sparrowhawk.p3d";
+model = "OPTRE_Vehicles_Air\Sparrowhawk\Sparrowhawk.p3d";
 icon = "OPTRE_Vehicles\Pelican\Data\icon.paa";
 mapSize = 25; //I think this belongs here
 picture = "OPTRE_Vehicles\Pelican\Data\icon2.paa";

@@ -1,6 +1,6 @@
 class TransportPylonsComponent
 {
-	UIPicture = "\OPTRE_Vehicles\Sparrowhawk\sparrowhawkPylonImage.paa";
+	UIPicture = "\OPTRE_Vehicles_Air\Sparrowhawk\sparrowhawkPylonImage.paa";
 	class pylons
 	{
 		class WingPylonRight1 //right tip

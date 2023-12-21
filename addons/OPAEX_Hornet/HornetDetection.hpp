@@ -1,6 +1,6 @@
 allowTabLock = 1;
 canUseScanner = 1;
-incomingMissileDetectionSystem = 16;
+//incomingMissileDetectionSystem = 16;
 nvScanner = 1;
 laserScanner = 1;
 weaponLockSystem = "2+4+8+16";

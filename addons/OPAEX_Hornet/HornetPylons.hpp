@@ -1,6 +1,6 @@
 class TransportPylonsComponent
 {
-	UIPicture = "\OPTRE_Vehicles\Hornet\HornetPylonPic.paa";
+	UIPicture = "\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
 	class pylons
 	{
 		class pylons1 //"left" launcher

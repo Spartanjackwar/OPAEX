@@ -74,7 +74,7 @@ class OPAEX_D20_UNSC_Army_Uniform_BananaGod: OPTRE_UNSC_Army_Uniform_WDL
 	scope = 1;
 	class ItemInfo: ItemInfo
 	{
-		uniformClass = "OPAEX_D20\BananaGod_UNSC_Army_Soldier_Banana";
+		uniformClass = "OPAEX_D20_UNSC_Army_Soldier_BananaGod";
 	};
 };
 
