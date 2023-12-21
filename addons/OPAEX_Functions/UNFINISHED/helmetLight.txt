@@ -1,0 +1,36 @@
+OPCOS_Helmetlight_State = true;
+private _OPCOS_HelmetLight_WearingNVG = true; 
+private _unit = player; 
+
+_OPCOS_HelmetLight = createSimpleObject ["A3\data_f\VolumeLight_searchLight.p3d", position _unit]; 
+_OPCOS_HelmetLight_Lightsource = "#lightpoint" createVehicleLocal getpos _unit; 
+_OPCOS_HelmetLight_Lightsource setpos getpos player; 
+_OPCOS_HelmetLight_Lightsource setLightDayLight true; 
+_OPCOS_HelmetLight_Lightsource setLightBrightness 0.2; 
+_OPCOS_HelmetLight_Lightsource setLightAmbient [1, 1, 1]; 
+_OPCOS_HelmetLight_Lightsource setlightcolor [1, 1, 1]; 
+   
+_OPCOS_HelmetLight attachto [_unit, [-0.15, 2, 0.15], "head"]; 
+_OPCOS_HelmetLight setVectorDirAndUP [[0,-1,0],[0,0,-1]]; 
+_OPCOS_HelmetLight_Lightsource attachto [_unit, [-0.15, 0, 0.15], "head"];
+
+while (OPCOS_HelmetLight_State)
+{
+	_CursorTgtPosAGL = screenToWorld [0.5,0.5];
+	_CursorTgtPosASL = AGLToASL _CursorTgtPosAGL;
+	OPCOS_HelmetLight_Lightsource setpos _CursorTgtPosAGL;
+	_tgt = [getPosASL OPCOS_HelmetLight, _CursorTgtPosASL] call BIS_fnc_vectorFromXToY;
+	OPCOS_HelmetLight setVectorDirAndUP [_tgt, [0, 0, -1]];
+};
+//Secondary
+deleteVehicle _OPCOS_HelmetLight; 
+deleteVehicle _OPCOS_HelmetLight_Lightsource;
+
+//Old
+//[getPosASL OPCOS_HelmetLight, _CursorTgtPosASL] call BIS_fnc_vectorFromXToY;
+//OPCOS_HelmetLight setVectorDirAndUP [[0, -1, 0], [0, 0, -1]];
+
+https://community.bistudio.com/wiki/BIS_fnc_vectorDirAndUpRelative
+
+//[0,0,0] getdir (eyeDirection _unit)
+//Alternatively: getCameraViewDirection

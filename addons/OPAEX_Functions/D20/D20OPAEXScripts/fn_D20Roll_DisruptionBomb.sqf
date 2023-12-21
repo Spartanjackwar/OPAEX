@@ -1,0 +1,37 @@
+//Jack Moss, aka Spartanjackwar.
+/*
+D20 grenade roll: Spawns an illumination bomb from OPAEX.
+
+Parameter 0: 3d array: position of the d20 greande.
+Parameter 1: object: thrower of the d20.
+
+Return: Nothing
+
+Can be executed in nonscheduled environment.
+Can execute on any client.
+*/
+
+params [
+	[
+		"_d20",
+		[0,0,0],
+		[[0,0,0]]
+	],
+	[
+		"_thrower",
+		objNull,
+		[objNull]
+	]
+];
+
+//We cannot tolerate not being given a thrower
+if (isNull _thrower) exitWith {
+	[] call OPAEX_fnc_Debug_Error_InputRules;
+	Nil
+};
+
+//Do the visuals
+[_d20, _thrower] remoteExec ["OPAEX_fnc_D20Visuals_None", 0, False];
+
+//Fire the bomb.
+[_d20, Nil, Nil, Nil] spawn OPAEX_fnc_DisruptorBomb;
