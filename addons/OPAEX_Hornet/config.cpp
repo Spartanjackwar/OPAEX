@@ -2341,10 +2341,17 @@ class cfgVehicles
 			};
 		};
 		hiddenSelections[] = {"camo1", "clan", "clan_text", "insignia"};
-		hiddenSelectionsTextures[] = {"OPTRE_Vehicles_Air\Hornet\data\hornet_hull_green_co.paa"};
-		
+		hiddenSelectionsTextures[] = {"optre_vehicles_air\hornet\data\hornet_hull_standard_co.paa"};
+
 		class textureSources
 		{
+			class colorgreen
+			{
+				displayName = "Standard";
+				author = "Article 2 Studios";
+				textures[] = {"optre_vehicles_air\hornet\data\hornet_hull_standard_co.paa"};
+				factions[] = {"OPTRE_UNSC"};
+			};
 			class colorgreen
 			{
 				displayName = "Green";
