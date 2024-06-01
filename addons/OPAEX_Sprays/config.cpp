@@ -260,7 +260,8 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\Chads\Spray_Chad3.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_Chad4.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_ChadJohnson.paa",
-			"\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa"
+			"\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa",
+			"\OPAEX_Sprays\sprays\Chads\Spray_ChadFocht.paa"
 		};
 	};
 	class OPAEX_Chad: OPAEX_Chad_Random {
@@ -292,6 +293,11 @@ class ACE_Tags {
 		displayName = "Aleksandr Sergeyevich Kerensky";
 		textures[] = {"\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa"};
 		icon = "\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa";
+	};
+	class OPAEX_Chad_Focht: OPAEX_Chad_Random {
+		displayName = "Anastasius Focht";
+		textures[] = {"\OPAEX_Sprays\sprays\Chads\Spray_ChadFocht.paa"};
+		icon = "\OPAEX_Sprays\sprays\Chads\Spray_ChadFocht.paa";
 	};
 	
 	//ODST Chads
@@ -360,6 +366,8 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenA.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenB.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Hoplite.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop1.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop2.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Logo.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2.paa",
@@ -384,6 +392,16 @@ class ACE_Tags {
 		displayName = "Hoplite";
 		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Hoplite.paa"};
 		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Hoplite.paa";
+	};
+	class OPAEX_19th_Hop1: OPAEX_19th_Random {
+		displayName = "Hoplite 1";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Hop1.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Hop1.paa";
+	};
+	class OPAEX_19th_Hop2: OPAEX_19th_Random {
+		displayName = "Hoplite 2";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Hop2.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Hop2.paa";
 	};
 	class OPAEX_19th: OPAEX_19th_Random {
 		displayName = "19th";
@@ -462,6 +480,7 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\Chads\Spray_Chad4.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_ChadJohnson.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa",
+			"\OPAEX_Sprays\sprays\Chads\Spray_ChadFocht.paa",
 			
 			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadA.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadB.paa",
@@ -476,6 +495,8 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenA.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenB.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Hoplite.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop1.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop2.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Logo.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Logo_LowVis.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder.paa",

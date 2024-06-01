@@ -61,7 +61,7 @@ class CfgWeapons
 				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\Laser_1.wss", 2.5, 1, 1500};
 				soundBegin[] = {"begin1", 1};
 			};
-			soundContinuous = 1;
+			soundContinuous = 0;
 			soundBurst = 1;
 			
 			aiRateOfFire = 1;
@@ -237,7 +237,7 @@ class CfgWeapons
 				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\Laser_1.wss", 2.5, 1, 1500};
 				soundBegin[] = {"begin1", 1};
 			};
-			soundContinuous = 1;
+			soundContinuous = 0;
 			reloadTime = 0.01;
 			magazineReloadTime = 5;
 			autoReload = 1;
