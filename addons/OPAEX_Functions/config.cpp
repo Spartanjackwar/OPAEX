@@ -104,6 +104,9 @@ class CfgFunctions
 			file = "\OPAEX_Functions\Utilities_Communication";
 			class RemoteSay3D{};
 			class RemoteSystemChat{};
+			class AddonChecker{};
+			class AddonCheckerOptions{};
+			class AddonCheckerFetchAll{};
 		};
 		class Utilities_Debug
 		{
@@ -355,6 +358,9 @@ class Extended_PreInit_EventHandlers {
 	class OPAEX_ExecutionFlow {
 		//Emergency variable used to stop all asynchronousExecutionLoops at any given time.
 		init = "missionNamespace setVariable [""OPAEX_EmergencyStopAsyncLoops"", false, true];";
+	};
+	class OPAEX_AddonChecker_Options {
+		init = "call OPAEX_fnc_AddonCheckerOptions";
 	};
 };
 

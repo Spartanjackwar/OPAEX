@@ -5,7 +5,7 @@ class CfgPatches
 		author = "Spartanjackwar";
 		authors[] = {"Spartanjackwar"};
  		requiredAddons[] = {
-			"OPTRE_Core"//, "A3_Armor_F_Gamma", "A3_Armor_F_Gamma_MBT_01"
+			"OPTRE_Core", "A3_Armor_F_Gamma", "A3_Armor_F_Gamma_MBT_01"
 		};
  		units[] = {};
  		weapons[] = {};
