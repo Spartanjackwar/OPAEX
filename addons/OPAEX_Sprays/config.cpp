@@ -111,6 +111,20 @@ class cfgWeapons {
 	};
 };
 
+class cfgVehicles {
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class Sponge {
+                displayName = "Sponge";
+                condition = "true";
+                exceptions[] = {};
+                statement = "[getPos player, 2.5] call OPAEX_fnc_Sponge;";
+                icon = "";
+            };
+        };
+    };
+};
 
 /*Fun tag facts:
 	The texutres can be any power of 2 up to 4096x4096.
@@ -482,10 +496,10 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\Chads\Spray_ChadKerensky.paa",
 			"\OPAEX_Sprays\sprays\Chads\Spray_ChadFocht.paa",
 			
-			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadA.paa",
-			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadB.paa",
-			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadC.paa",
-			"\OPAEX_Sprays\sprays\Chads\Spray_ODSTChadD.paa",
+			"\OPAEX_Sprays\sprays\ODSTChads\Spray_ODSTChadA.paa",
+			"\OPAEX_Sprays\sprays\ODSTChads\Spray_ODSTChadB.paa",
+			"\OPAEX_Sprays\sprays\ODSTChads\Spray_ODSTChadC.paa",
+			"\OPAEX_Sprays\sprays\ODSTChads\Spray_ODSTChadD.paa",
 			
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Gnome.paa",
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Way3.paa",

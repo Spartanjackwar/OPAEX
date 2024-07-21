@@ -183,6 +183,12 @@ class CfgFunctions
 			class InitGrappleSystem {};
 			class Grapple_PullTarget {};
 		};
+		class Sponge {
+			file = "\OPAEX_Functions\Sponge";
+			class SpongeGlobal {};
+			class SpongeHand {};
+			class Sponge {};
+		};
 		class D20
 		{
 			file = "\OPAEX_Functions\D20";
