@@ -389,7 +389,11 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2Shadow.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder3.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Grif.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa"
+			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"
 		};
 	};
 	class OPAEX_19th_FenrirA: OPAEX_19th_Random {
@@ -462,6 +466,26 @@ class ACE_Tags {
 		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa"};
 		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa";
 	};
+	class OPAEX_19th_Jotunn: OPAEX_19th_Random {
+		displayName = "Jotunn";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa";
+	};
+	class OPAEX_19th_Valkyrie: OPAEX_19th_Random {
+		displayName = "Valkyrie";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa";
+	};
+	class OPAEX_19th_Medical_Red: OPAEX_19th_Random {
+		displayName = "Medical Red";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa";
+	};
+	class OPAEX_19th_Medical_White: OPAEX_19th_Random {
+		displayName = "Medical White";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa";
+	};
 	
 	//The ultimate random can.
 	class OPAEX_Random: OPAEX_Logo_Random {
@@ -505,20 +529,23 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Way3.paa",
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa",
 			
-			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenA.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenB.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Hoplite.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop1.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Hop2.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Logo.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19_Logo_LowVis.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2Black.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2Shadow.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder3.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19_Grif.paa"
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Grif.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"
 		};
 	};
 };
