@@ -7,54 +7,7 @@ class OPAEX_D20_W_M45BananaGod: OPTRE_M45 {
 	magazineWell[] = {};
 	
 	modes[] = {"Single"};
-	class Single: Mode_SemiAuto
-	{
-		sounds[] = {"StandardSound"};
-		class BaseSoundModeType
-		{
-			weaponSoundEffect = "DefaultRifle";
-			closure1[] = {"", 1, 1, 200};
-			closure2[] = {"", 1, 1, 200};
-			soundClosure[] = {"closure1", 0.5};
-		};
-		class StandardSound: BaseSoundModeType
-		{
-			begin1[] = {"\OPTRE_Weapons\Shotgun\data\sounds\fire1.ogg", 1.3, 1, 1500};
-			soundBegin[] = {"begin1", 1};
-			class SoundTails
-			{
-				class TailForest
-				{
-					sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_forest", 1, 1, 2200};
-					frequency = 1;
-					volume = "(1-interior/1.4)*forest";
-				};
-				class TailHouses
-				{
-					sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_houses", 1, 1, 2200};
-					frequency = 1;
-					volume = "(1-interior/1.4)*houses";
-				};
-				class TailInterior
-				{
-					sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_interior", 1.99526, 1, 2200};
-					frequency = 1;
-					volume = "interior";
-				};
-				class TailMeadows
-				{
-					sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_meadows", 1, 1, 2200};
-					frequency = 1;
-					volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-				};
-				class TailTrees
-				{
-					sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_trees", 1, 1, 2200};
-					frequency = 1;
-					volume = "(1-interior/1.4)*trees";
-				};
-			};
-		};
+	class Single: Single {
 		//reloadTime = 1.11;
 		reloadTime = 0.5;
 		dispersion = 5e-005;
@@ -68,6 +21,13 @@ class OPAEX_D20_W_M45BananaGod: OPTRE_M45 {
 		maxRange = 200;
 		maxRangeProbab = 0.45;
 		
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+ 			class MuzzleSlot: MuzzleSlot {
+				compatibleitems[]+= {
+					"OPTRE_M7_Sight"
+				};
+			};
+ 		};
 		
 		distanceZoomMin = 60;
 		distanceZoomMax = 60;
@@ -83,5 +43,14 @@ class OPAEX_D20_W_M45BananaGod: OPTRE_M45 {
 		ace_overheating_dispersion = 0;
 		ace_arsenal_hide = 1;
 		ace_twistDirection = 0;
+	};
+};
+
+class OPAEX_D20_W_M45BananaGod_Optic: OPAEX_D20_W_M45BananaGod {
+	class LinkedItems {
+		class LinkedItemsOptic {
+			slot = "CowsSlot";
+			item = "OPTRE_M7_Sight";
+		};
 	};
 };

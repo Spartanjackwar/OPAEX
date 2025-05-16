@@ -10,6 +10,7 @@ class OPAEX_D20_A_M45BananaGod: OPTRE_8Gauge_HEDP
 	caliber = 2;
 	aiAmmoUsageFlags = "32 + 64 + 128 + 256 + 512";
 	fuseDistance = 0;
+	coefGravity = 0;
 	
 	submunitionAmmo = "B_12Gauge_Pellets_Submunition_Deploy";
 	submunitionConeType[] = {"random", 10};

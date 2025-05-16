@@ -1,12 +1,23 @@
-class OPAEX_D20_UNSC_Army_Soldier_BananaGod: OPTRE_UNSC_Army_Soldier_WDL
-{
-	scope = 1;
+class OPAEX_D20_UNSC_Army_Soldier_BananaGod: OPTRE_UNSC_Army_Soldier_WDL {
+	dlc = "OPAEX";
+	author = "Spartanjackwar";
+	side = 2;
+	faction = "OPAEX_Cursed";
+	editorCategory = "OPAEX_3DENCAT_Men_Cursed";
+	editorSubcategory = "OPAEX_3DENSUBCAT_Men_Cursed";
+	
+	displayName = "The Cursed God Banana Man. You will regret this one.";
+	scope = 2;
+	scopeCurator = 2;
 	
 	brakeDistance = 1; //+4
 	maxSpeed = 40.2336; //24 was original.
 	maxTurnAngularVelocity = 5; //+2
 	
 	armor = 666; //More or less the HP of the unit.  Usually 2, but this is a god.
+	impactDamageMultiplier = 0; //No fall damage.  Bad newton.
+	camouflage = 100;
+	audible = 1000;
 	
 	icon = "iconManOfficer";
 	linkedItems[] = {
@@ -20,13 +31,13 @@ class OPAEX_D20_UNSC_Army_Soldier_BananaGod: OPTRE_UNSC_Army_Soldier_WDL
 		"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG", "OPTRE_Biofoam", "OPTRE_NVG"
 	};
 	weapons[] = {
-		"OPAEX_D20_W_M45BananaGod", 
+		"OPAEX_D20_W_M45BananaGod_Optic", 
 		"Throw", 
 		"Put"
 	};
 	respawnWeapons[] = {
-		"OPAEX_D20_W_M45BananaGod", 
-		"Throw", 
+		"OPAEX_D20_W_M45BananaGod_Optic", 
+		"Throw",
 		"Put"
 	};
 	magazines[] = {

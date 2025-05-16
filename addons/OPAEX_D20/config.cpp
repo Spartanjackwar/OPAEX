@@ -10,10 +10,20 @@ class CfgPatches
 			"A3_Data_F_Kart",
 			"OPTRE_UNSC_Units_Army"
 		};
- 		units[] = {};
+ 		units[] = {
+			"OPAEX_D20_UNSC_Army_Soldier_BananaGod"
+		};
  		weapons[] = {"Throw"};
-		magazines[] = {"OPAEX_M_D20", "OPAEX_M_D20_GL", "OPAEX_M_D20_3GL"};
-		ammo[] = {"OPAEX_A_D20", "OPAEX_A_D20_bullet", "OPAEX_A_D20_GL"};
+		magazines[] = {
+			"OPAEX_M_D20",
+			"OPAEX_M_D20_GL",
+			"OPAEX_M_D20_3GL"
+		};
+		ammo[] = {
+			"OPAEX_A_D20",
+			"OPAEX_A_D20_bullet",
+			"OPAEX_A_D20_GL"
+		};
  		requiredVersion = 0.1;
  	};
 };
@@ -92,7 +102,19 @@ class cfgWeapons
 	};
 	#include"BananaGod\BananaGodArmor.hpp"
 	
-	class OPTRE_M45;
+	class arifle_Mk20_F;
+	class OPTRE_Shotgun_Base: arifle_Mk20_F {
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_M45: OPTRE_Shotgun_Base {
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			class MuzzleSlot;
+			class CowsSlot;
+			class PointerSlot;
+			class UnderBarrelSlot;
+ 		};
+		class Single;
+	};
 	#include"BananaGod\W_ShotgunOfDoom.hpp"
 	#include"D20GMG\W_D20GMG.hpp"
 };
@@ -107,6 +129,31 @@ class Extended_Fired_EventHandlers
 	};
 };
 
+class CfgFactionClasses {
+	class OPTRE_UNSC;
+	class OPAEX_Cursed: OPTRE_UNSC
+	{
+		dlc = "OPAEX";
+		displayName = "Cursed Stuff";
+		author = "Spartanjackwar";
+		side = 2;
+		//icon = "\OPTRE_Core\data\icon_UNSC_ca.paa";
+		//flag = "\OPTRE_Core\Data\flag_UNSC_ca.paa";
+	};
+};
+
+class CfgEditorCategories
+{
+	class OPAEX_3DENCAT_Men_Cursed
+	{
+		displayName = "Cursed men";
+	};
+};
+class CfgEditorSubcategories {
+	class OPAEX_3DENSUBCAT_Men_Cursed {
+		displayName = "Men (Cursed)";
+	};
+};
 //================================================================================
 class CfgVehicles
 {
