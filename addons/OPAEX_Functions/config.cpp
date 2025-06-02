@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class OPAEX_Functions
-	{
+class CfgPatches {
+	class OPAEX_Functions {
 		author = "Spartanjackwar";
 		authors[] = {"Spartanjackwar"};
  		requiredAddons[] = {
@@ -26,42 +24,41 @@ class FolderName
 	class second_function_Name{};
 };
 */
-class CfgFunctions 
-{
-	class OPAEX
-	{
-		class GlassingBeam
-		{
+class CfgFunctions {
+	class OPAEX {
+		class GlassingBeam {
 			file = "OPAEX_Functions\GlassingBeam";
 			class GlassingBeam {};
 			class GlassingBeam_ClientEffects {};
 			class GlassingBeam_ServerEffects {};
 			class GlassingBeam_Module {};
 		};
-		class BoundingBoxes
-		{
+		class BallBipod {
+			file = "OPAEX_Functions\BallBipod";
+			class BallBibodKeybinding {};
+			class BallBipodOff {};
+			class BallBipodOn {};
+		};
+		class BoundingBoxes {
 			file = "\OPAEX_Functions\BoundingBoxes";
-			class IsBoundingBoxContained{};
-			class GetBoundingBoxTopCenter{};
+			class DrawBoundingBox{};
 			class GetBoundingBoxDimensions{};
 			class GetBoundingBoxDimensionsOffset{};
+			class GetBoundingBoxTopCenter{};
 			class GetBoundingBoxWorld{};
-			class DrawBoundingBox{};
+			class IsBoundingBoxContained{};
 			class TimedDrawBoundingBox{};
 		};
-		class Timer
-		{
+		class Timer {
 			file = "\OPAEX_Functions\Timer";
 			class Timer{};
 		};
-		class PelicanMagLiftSystem
-		{
+		class PelicanMagLiftSystem {
 			file = "\OPAEX_Functions\PelicanMagLiftSystem";
 			//class PelicanLoadValidate{};
 			//class PelicanUnLoadValidate{};
 		};
-		class Spartan_Laser
-		{
+		class Spartan_Laser {
 			file = "\OPAEX_Functions\Spartan_Laser";
 			class ChargedWeaponController {};
 			class Extended_InitPost_splaser {};
@@ -73,13 +70,11 @@ class CfgFunctions
 			class hasStopAction {};
 			class GetChargingStatus {};
 		};
-		class Particles
-		{
+		class Particles {
 			file = "\OPAEX_Functions\Particles";
 			//class setParticleArray{};
 		};
-		class Aircore_Weapons
-		{
+		class Aircore_Weapons {
 			file = "\OPAEX_Functions\Aircore_Weapons";
 			class Mk127{}; //Named for the M127A1
 			class Mk127_Module{};
@@ -99,8 +94,7 @@ class CfgFunctions
 			
 			class EMP{};
 		};
-		class Utilities_Communication
-		{
+		class Utilities_Communication {
 			file = "\OPAEX_Functions\Utilities_Communication";
 			class RemoteSay3D{};
 			class RemoteSystemChat{};
@@ -108,19 +102,16 @@ class CfgFunctions
 			class AddonCheckerOptions{};
 			class AddonCheckerFetchAll{};
 		};
-		class Utilities_Debug
-		{
+		class Utilities_Debug {
 			file = "\OPAEX_Functions\Utilities_Debug";
 			class Debug_Error_InputRules {};
 			class Debug_Error_RunCondition {};
 		};
-		class Utilities_Draw
-		{
+		class Utilities_Draw {
 			file = "\OPAEX_Functions\Utilities_Draw";
 			//SoonTM.
 		};
-		class Utilities_ObjectManipulation
-		{
+		class Utilities_ObjectManipulation {
 			file = "\OPAEX_Functions\Utilities_ObjectManipulation";
 			class CopyPasteObjectMotion {};
 			class CopyPasteObjectMotionWithOffset {};
@@ -133,15 +124,13 @@ class CfgFunctions
 			class animateTextureLooped {};
 			class getMuzzleOffsetFromWeaponProxy {};
 		};
-		class Utilities_EventHandlers
-		{
+		class Utilities_EventHandlers {
 			file = "\OPAEX_Functions\Utilities_EventHandlers";
 			class GetScriptedHandlerList{};
 			class HasEventHandler{};
 			class PasteObjectVariables{};
 		};
-		class Utilities_Gear
-		{
+		class Utilities_Gear {
 			file = "\OPAEX_Functions\Utilities_Gear";
 			class ClearUnitGear{};
 			class PasteUnitGear{};
@@ -162,13 +151,11 @@ class CfgFunctions
 			
 			class Terrain_Alt {};
 		};
-		class Utilities_ExecutionFlow
-		{
+		class Utilities_ExecutionFlow {
 			file = "\OPAEX_Functions\Utilities_ExecutionFlow";
 			class asynchronousExecutionLoop{};
 		};
-		class Utilities_Skeleton
-		{
+		class Utilities_Skeleton {
 			file = "\OPAEX_Functions\Utilities_Skeleton";
 			class GetSkeleton{};
 			class ServerInit_SkeletonSwapHandlers{};
@@ -177,8 +164,7 @@ class CfgFunctions
 			class SwapPlayerUnit{};
 			class GetUnitIDInGroup{}; //May need to make a new category for this one.
 		};
-		class Grapple
-		{
+		class Grapple {
 			file = "\OPAEX_Functions\Grapple";
 			class InitGrappleSystem {};
 			class Grapple_PullTarget {};
@@ -189,14 +175,12 @@ class CfgFunctions
 			class SpongeHand {};
 			class Sponge {};
 		};
-		class D20
-		{
+		class D20 {
 			file = "\OPAEX_Functions\D20";
 			class D20_Fired {};
 			class D20_Fired_Particles {};
 		};
-		class D20_Core
-		{
+		class D20_Core {
 			file = "\OPAEX_Functions\D20\D20CoreScripts";
 			class D20_AddClassEventHandler {};
 			//class D20_InitVariables {preInit = 1;};
@@ -228,8 +212,7 @@ class CfgFunctions
 			class GetNextScoringPlayer {};
 			class DebugD20ScriptList {};
 		};
-		class D20_Vanilla
-		{
+		class D20_Vanilla {
 			file = "\OPAEX_Functions\D20\D20VanillaScripts";
 			class D20Roll_40mmExplosive {};
 			class D20Roll_40mmFlares {};
@@ -270,8 +253,7 @@ class CfgFunctions
 			class D20Roll_Sofa {};
 			class D20Roll_RGBMan {};
 		};
-		class D20_OPTRE
-		{
+		class D20_OPTRE {
 			file = "\OPAEX_Functions\D20\D20OPTREScripts";
 			class D20Roll_ElephantEmpty {};
 			class D20Roll_Forklift {};
@@ -288,8 +270,7 @@ class CfgFunctions
 			class D20Roll_FireteamFriendly_UNSC {};
 			class D20Roll_FireteamHostile_UNSC {};
 		};
-		class D20_OPTREFC
-		{
+		class D20_OPTREFC {
 			file = "\OPAEX_Functions\D20\D20OPTREFCScripts";
 			class D20Roll_Banshee {};
 			class D20Roll_EliteFireteam {};
@@ -299,8 +280,7 @@ class CfgFunctions
 			class D20Roll_SpartanFriendly {};
 			class D20Roll_SpartanHostile {};
 		};
-		class D20_OPAEX
-		{
+		class D20_OPAEX {
 			file = "\OPAEX_Functions\D20\D20OPAEXScripts";
 			class D20Roll_CryoBomb {};
 			class D20Roll_IlluminationBomb {};
@@ -312,10 +292,8 @@ class CfgFunctions
 
 //REQUIRES CBA
 class Extended_GetIn_EventHandlers {
-	class OPTRE_Pelican_F
-    {
-        class OPAEX_Gmeter
-        {
+	class OPTRE_Pelican_F {
+        class OPAEX_Gmeter {
 			GetIn = "[] spawn OPAEX_fnc_G";
         };
     };
@@ -328,24 +306,18 @@ class Extended_GetIn_EventHandlers {
         };
     };
 	*/
-	class OPAEX_VTOL_Hornet_base
-    { //Doesn't link to OPTRE_Hornet_base yet, so it's necessary to specify.
-        class OPAEX_Gmeter
-        {
+	class OPAEX_VTOL_Hornet_base { //Doesn't link to OPTRE_Hornet_base yet, so it's necessary to specify.
+        class OPAEX_Gmeter {
 			GetIn = "[] spawn OPAEX_fnc_G";
         };
     };
-	class OPTRE_Hornet_base
-    {
-        class OPAEX_Gmeter
-        {
+	class OPTRE_Hornet_base {
+        class OPAEX_Gmeter {
 			GetIn = "[] spawn OPAEX_fnc_G";
         };
     };
-	class OPTRE_falcon_base
-    {
-        class OPAEX_Gmeter
-        {
+	class OPTRE_falcon_base {
+        class OPAEX_Gmeter {
 			GetIn = "[] spawn OPAEX_fnc_G";
         };
     };
@@ -370,7 +342,12 @@ class Extended_PreInit_EventHandlers {
 	};
 };
 
-class CfgVehicles
-{
+class Extended_PostInit_EventHandlers { //On-spawn. After all inits have been run. Nonscheduled only.
+	class OPAEX_BallBipod {
+		init = "[] call OPAEX_fnc_BallBibodKeybinding";
+	};
+};
+
+class CfgVehicles {
 	#include<modules.hpp>
 };

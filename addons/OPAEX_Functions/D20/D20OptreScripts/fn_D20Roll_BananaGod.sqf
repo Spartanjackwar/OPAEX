@@ -9,10 +9,6 @@ Return: Nothing
 
 Can be executed in nonscheduled environment.
 Can execute on any client.
-
-Dependencies:
-	OPAEX_fnc_Lightning
-	OPAEX_fnc_D20_SpawnUnit
 */
 
 params [

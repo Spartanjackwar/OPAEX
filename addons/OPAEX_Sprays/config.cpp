@@ -116,7 +116,7 @@ class cfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class Sponge {
-                displayName = "Sponge";
+                displayName = "Spray Sponge";
                 condition = "true";
                 exceptions[] = {};
                 statement = "[getPos player, 2.5] call OPAEX_fnc_Sponge;";

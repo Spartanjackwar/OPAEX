@@ -119,8 +119,8 @@ class CfgWeapons
 		};
 		*/
 		
-		modes[] = {"pew"};
-		class pew: ShortBurst {
+		modes[] = {"Pew"};
+		class Pew: ShortBurst {
 			burst = 1; //Number of shots.
 			multiplier = 1; //Ammo per shot.
 			aiBurstTerminable = false;
