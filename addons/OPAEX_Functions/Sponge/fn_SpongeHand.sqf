@@ -20,7 +20,7 @@ private _intersections = lineIntersectsSurfaces [
 	_startPosASL,
 	_endPosASL,
 	_unit,
-	objNull,
+	_unit,
 	true,
 	1,
 	"GEOM",

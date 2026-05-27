@@ -90,7 +90,7 @@ class CfgCloudlets
 		particleFSIndex = 0;
 		particleFSFrameCount = 1;
 		particleFSLoop = 0;
-		particleType = "Spaceobject";
+		particleType = "Spaceobject"
 		
 		color[] = {{1, 1, 1, 1}};
 		emissiveColor[] = {{1, 1, 1, 1}, {1, 1, 1, 1}};
@@ -209,7 +209,7 @@ class RscDisplayAttributes
 class RscDisplayAttributesModuleOPAEX_Glassing: RscDisplay_OPAEX_GenericMenuDisplay
 {
 	idd = 4000;
-	scriptName = "RscDisplayAttributesModuleOPAEX_Glassing";
+	//scriptName = "RscDisplayAttributesModuleOPAEX_Glassing";
 	scriptPath = "CuratorDisplays";
 	onLoad = "['onLoad', _this, 'RscDisplayAttributesModuleOPAEX_Glassing', 'CuratorDisplays', true] call (uinamespace getvariable 'BIS_fnc_initDisplay')";
 	onUnload = "['onUnload', _this, 'RscDisplayAttributesModuleOPAEX_Glassing', 'CuratorDisplays', true] call (uinamespace getvariable 'BIS_fnc_initDisplay')";

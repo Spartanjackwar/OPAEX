@@ -7,7 +7,7 @@ Parameter 0: object: Unit in the bipod stance.
 Return: Nothing
 
 Can be executed in nonscheduled environment.
-Execute where parameter 0 is local. However, we do that for you if it isn't.
+Execute where parameter 0 is local.
 */
 params [
 	[
@@ -16,10 +16,13 @@ params [
 		[objNull]
 	]
 ];
+//Abort non interfaced clients.
+if (!(hasInterface) or (isDedicated)) exitWith {};
 
 //Safe guard nonlocal runs.
 if (!local _unit) exitWith {
-	_this remoteExecCall ["OPAEX_fnc_BallBipodOn", _unit];
+	nil;
+	//_this remoteExecCall ["OPAEX_fnc_BallBipodOn", _unit];
 };
 
 //Abort if in a vehicle.
@@ -45,7 +48,8 @@ private _index = _unit addEventHandler ["AnimDone", {
 	//If the anim has finished, attempt to restart it.
 	if (_anim isEqualTo "opaex_ballbipod_standstill") then { //Anim name MUST BE LOWERCASE since Arma does that.
 		if (alive _unit) then {
-			_unit playMove "OPAEX_BallBipod_Standstill";
+			//_unit playMove "OPAEX_BallBipod_Standstill"; //Does not work for multiplayer
+			_unit playActionNow "OPAEX_BallBipod_Standstill";
 		} else {
 			//Extract the object.
 			_brick = _unit getVariable ["OPAEX_BallBipodBrick", objNull];

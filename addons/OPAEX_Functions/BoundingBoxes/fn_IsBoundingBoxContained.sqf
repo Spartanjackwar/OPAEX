@@ -6,6 +6,9 @@
 	Parameter 1: 3DArray: Larger bounding box dimensions
 	
 	Return: boolean.  False if any dimensions of param0 > param1.
+	
+	May run in unscheduled environments
+	May be run on any client.
 */
 
 params [
@@ -27,9 +30,7 @@ _length = (_Box1 select 1) - (_Box0 select 1);
 _height = (_Box1 select 2) - (_Box0 select 2);
 
 //If any delta are negative, return false.  Otherwise, return true.
-if (_width < 0 or _length < 0 or _height < 0) then
-{
-	False //This is a return satement.
-} else {
-	True //This is a return satement.
+if (_width < 0 or _length < 0 or _height < 0) exitWith {
+	False; //This is a return satement.
 };
+True //This is a return satement.

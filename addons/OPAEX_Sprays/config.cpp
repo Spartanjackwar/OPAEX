@@ -8,7 +8,7 @@ class CfgPatches
 		authors[] = {"Spartanjackwar"};
  		requiredAddons[] = {
 			"OPAEX_Core"
-			//"ace_tagging" we actually do not need ACE for the items.  It is needed only for the spray can functionality.
+			//"ace_tagging" we actually do not need ACE for the items.  It is needed only for the spray can functionality. Since that is optional, it is not necessary to include and is only here for reference.
 		};
 		requiredVersion=0.1;
 		units[]={};
@@ -63,7 +63,7 @@ class cfgWeapons {
 	class OPAEX_ItemCore: CBA_MiscItem {
 		//Intentionally Empty
 	};
-	class OPAEX_SprayCan: OPAEX_ItemCore { //I made my own rather than inherit from ACE to prevent a class dependence on ACE.
+	class OPAEX_SprayCan: OPAEX_ItemCore { //I made my own rather than inherit from ACE to prevent a class dependence on ACE. That way the mod doesn't ever need ACE.
 		author = "Spartanjackwar";
 		scope = 2;
 		
@@ -353,7 +353,8 @@ class ACE_Tags {
 		textures[] = { //I bet you forgot these can randomize.  Read the documentation friends.
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Gnome.paa",
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Way3.paa",
-			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa"
+			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa",
+			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_SaintSPNKR.paa",
 		};
 	};
 	class OPAEX_Kilroy_Gnome: OPAEX_Kilroy_Random {
@@ -370,6 +371,11 @@ class ACE_Tags {
 		displayName = "Racoon";
 		textures[] = {"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa"};
 		icon = "\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa";
+	};
+	class OPAEX_Kilroy_SaintSPNKR: OPAEX_Kilroy_Random {
+		displayName = "Saint SPNKR";
+		textures[] = {"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_SaintSPNKR.paa"};
+		icon = "\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_SaintSPNKR.paa";
 	};
 	
 	//19th fleet
@@ -390,10 +396,13 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder3.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Grif.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Jotunn.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Valk.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Med_Red.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Med_White.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder1.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_SkyGod.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Gambler.paa"
 		};
 	};
 	class OPAEX_19th_FenrirA: OPAEX_19th_Random {
@@ -436,6 +445,11 @@ class ACE_Tags {
 		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder.paa"};
 		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder.paa";
 	};
+	class OPAEX_19th_Wayfinder1: OPAEX_19th_Random {
+		displayName = "Way 1";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder1.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder1.paa";
+	};
 	class OPAEX_19th_Wayfinder2: OPAEX_19th_Random {
 		displayName = "Way 2";
 		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder2.paa"};
@@ -468,30 +482,40 @@ class ACE_Tags {
 	};
 	class OPAEX_19th_Jotunn: OPAEX_19th_Random {
 		displayName = "Jotunn";
-		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa"};
-		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Jotunn.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Jotunn.paa";
 	};
 	class OPAEX_19th_Valkyrie: OPAEX_19th_Random {
 		displayName = "Valkyrie";
-		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa"};
-		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Valk.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Valk.paa";
 	};
 	class OPAEX_19th_Medical_Red: OPAEX_19th_Random {
 		displayName = "Medical Red";
-		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa"};
-		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Med_Red.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Med_Red.paa";
 	};
 	class OPAEX_19th_Medical_White: OPAEX_19th_Random {
 		displayName = "Medical White";
-		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"};
-		icon = "\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Med_White.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Med_White.paa";
+	};
+	class OPAEX_19th_SkyGod: OPAEX_19th_Random {
+		displayName = "SkyGod";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_SkyGod.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_SkyGod.paa";
+	};
+	class OPAEX_19th_Gambler: OPAEX_19th_Random {
+		displayName = "Gambler";
+		textures[] = {"\OPAEX_Sprays\sprays\19th\Spray_19_Gambler.paa"};
+		icon = "\OPAEX_Sprays\sprays\19th\Spray_19_Gambler.paa";
 	};
 	
 	//The ultimate random can.
 	class OPAEX_Random: OPAEX_Logo_Random {
 		displayName = "There is only random.";
 		requiredItem = "OPAEX_RandomCan";
-		textures[] = {
+		textures[] = { //TODO: Replace this whole section with #includes so that I need to check less file paths.
 			"\OPAEX_Sprays\sprays\Spray_UNSC.paa",
 			"\OPAEX_Sprays\sprays\Spray_UNSC_PostWar.paa",
 			"\OPAEX_Sprays\sprays\Spray_Fist.paa",
@@ -528,6 +552,7 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Gnome.paa",
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Way3.paa",
 			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_Racoon.paa",
+			"\OPAEX_Sprays\sprays\Kilroy\Spray_Kilroy_SaintSPNKR.paa",
 			
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenA.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenB.paa",
@@ -542,10 +567,13 @@ class ACE_Tags {
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Wayfinder3.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_Grif.paa",
 			"\OPAEX_Sprays\sprays\19th\Spray_19_FenLowVis.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Jotunn.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Valk.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_Red.paa",
-			"\OPAEX_Sprays\sprays\19th\Spray_19th_Med_White.paa"
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Jotunn.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Valk.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Med_Red.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Med_White.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_WayFinder1.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_SkyGod.paa",
+			"\OPAEX_Sprays\sprays\19th\Spray_19_Gambler.paa"
 		};
 	};
 };

@@ -1,14 +1,15 @@
 //Jack Moss, aka Spartanjackwar
 /*
-	This function calculates the max width, max length, and max height of a bounding box.
+This function calculates the max width, max length, and max height of a bounding box.
 
-	Parameter 0: Object: Object to get boundingbox for.
-	Parameter 1: String: LOD to check the boundingbox for.  Optional as it defaults to geometry.
-	Parameter 2: Bool: check for if we must adjust for model centers.
-	
-	Return: array of three numbers: max width, max length, and max height, in that order.
+Parameter 0: Object: Object to get boundingbox for.
+Parameter 1: String: LOD to check the boundingbox for.  Optional as it defaults to geometry.
+Parameter 2: Bool: check for if we must adjust for model centers.
 
-	May be run on any client.  May run in unscheduled environments
+Return: array of three numbers: max width, max length, and max height, in that order.
+
+May run in unscheduled environments
+May be run on any client.
 */
 params [
 	[

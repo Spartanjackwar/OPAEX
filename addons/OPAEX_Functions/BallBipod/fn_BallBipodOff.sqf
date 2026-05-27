@@ -28,6 +28,8 @@ params [
 		[objNull]
 	]
 ];
+//Abort non interfaced clients.
+if (!(hasInterface) or (isDedicated)) exitWith {};
 
 //Check index and brick exists.
 if (_index <= -1) exitWith {

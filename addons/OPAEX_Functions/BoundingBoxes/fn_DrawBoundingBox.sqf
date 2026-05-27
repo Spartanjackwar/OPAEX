@@ -6,13 +6,31 @@ Please note that you must delete the handler, or you will quickly add lag to all
 Because of the above, it is highly recommended that OPAEX_fnc_TimedDrawBoundingBox is used instead.
 
 Parameter 0: Object whose box we draw.
-Return: A handle to the bounding box draw3D event handler.
+
+Return: A handle to the bounding box draw3D event handler. Nil on failure.
 */
 
 //Retrieve and set parameters.
-private ["_object","_bb","_bbx","_bby","_bbz","_arr","_y","_z","_color", "_Handle"];
+private [
+	"_object",
+	"_bb",
+	"_bbx",
+	"_bby",
+	"_bbz",
+	"_arr",
+	"_y",
+	"_z",
+	"_color",
+	"_Handle"
+];
 _object = _this;
 _color = [0, 1, 0, 1]; //RGBA
+
+//Validate object
+if (isNull _object) exitWith {
+	[] call OPAEX_fnc_Debug_Error_InputRules;
+	Nil;
+};
 
 //Box builder code block.  Use "call _bb" to invoke this.  Intended to operate on [x, y, z] inputs.
 _bb = {
@@ -41,7 +59,7 @@ _bboxr = boundingBoxReal _object call _bb;
 
 //Add draw3d handler.
 _Handle = addMissionEventHandler ["Draw3D", {
-	params["_bboxr"];
+	_thisargs params["_bboxr"];
 	for "_i" from 0 to 7 step 2 do { //I don't know why 7 is used or step 2.
 		drawLine3D [
 			_bboxr select _i,
